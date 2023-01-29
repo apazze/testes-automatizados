@@ -20,5 +20,6 @@ class CarroRepositoryTest {
 
         assertThat(carroRepository.findAll().get(0), is(carro));
     }
-
+    // 20230129 - Necessário incluir o runtimeOnly 'com.h2database:h2' no build.gradle, mas
+    // não é preciso configurar um banco.
 }
